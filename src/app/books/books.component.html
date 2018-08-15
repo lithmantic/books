@@ -1,24 +1,17 @@
-<h2>My Books</h2>
-<ul class="books">
-  <li *ngFor="let hero of books"
-      [class.selected]="book === selectedBook"
-      (click)="onSelect(book)">
-    <span class="badge">编辑</span>
-    <span class="badge">详情</span>
-    <span class="badge">借阅</span>
-    <span class="badge">删除</span>
-  </li>
-</ul>
-
-<div *ngIf="selectedBook">
-
-  <h2>{{selectedBook.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{selectedBook.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="selectedBook.name" placeholder="name">
-    </label>
-  </div>
-
+<div>
+  <button class="head">新增</button>
+  <button class="head">还书</button>
 </div>
 
+  <ul class="books">
+    <li *ngFor="let book of books"
+        [class.selected]="book === selectedBook"
+        (click)="onSelect(book)">
+      <span class="name">书名：</span>
+      <span class="des">描述：</span>
+      <span class="badge" a="#">编辑</span>
+      <span class="badge" a="#">详情</span>
+      <span class="badge" a="#">借阅</span>
+      <span class="badge" a="#">删除</span>
+    </li>
+  </ul>
