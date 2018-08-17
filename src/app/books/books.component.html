@@ -1,17 +1,18 @@
 <div>
-  <button class="head">新增</button>
-  <button class="head">还书</button>
+  <label><input /></label>
+  <button class="head search" (click)="search(bookName.value)">搜索</button>
+  <button class="head add" (click)="add(bookName.value)">新增</button>
 </div>
-
   <ul class="books">
     <li *ngFor="let book of books"
         [class.selected]="book === selectedBook"
         (click)="onSelect(book)">
       <span class="name">书名：</span>
       <span class="des">描述：</span>
-      <span class="badge" a="#">编辑</span>
-      <span class="badge" a="#">详情</span>
-      <span class="badge" a="#">借阅</span>
-      <span class="badge" a="#">删除</span>
+      <span class="badge" a="#" (click)="edit(bookName.value)">编辑</span>
+      <span class="badge" a="#" (click)="detail(bookName.value)">详情</span>
+      <span class="badge" a="#" (click)="borrow(bookName.value)">借阅</span>
+      <span class="badge" a="#" (click)="return(bookName.value)">还书</span>
+      <span class="badge" a="#" (click)="delete(bookName.value)">删除</span>
     </li>
   </ul>
