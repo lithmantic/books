@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Book } from '../book';
-import { BooksService } from './boooks.service';
-import { BOOKS } from '../mock-books';
+import { Book } from './book';
+import { BooksService } from '../../shared/services/books.service';
+// import { BOOKS } from '../mock-books';
 
 @Component({
   selector: 'app-books',
@@ -11,7 +11,7 @@ import { BOOKS } from '../mock-books';
 })
 export class BooksComponent implements OnInit {
 
-  books = BOOKS;
+  // books = BOOKS;
 
   selectedBook: Book;
 
@@ -37,16 +37,15 @@ export class BooksComponent implements OnInit {
   // }
   // this.booksService.addBook(newBook).subscribe(book => this.books.push(book));
 
-  delete(book: Book): void {
-    this.books = this.books.filter(h => h !== book);
-    this.booksService.deleteBook(book.id).subscribe();
-  }
+  // delete(book: Book): void {
+  //   this.books = this.books.filter(h => h !== book);
+  //   this.booksService.deleteBook(book.id).subscribe();
+  // }
   // this.booksService.deleteBook(book.id).subscribe();
   // this.booksService.deleteBook(book.id);
 
   getBooks(): void {
-    this.booksService.getBooks()
-      .subscribe(books => this.books = books);
+    this.getBooks();
   }
 
   // update() {
