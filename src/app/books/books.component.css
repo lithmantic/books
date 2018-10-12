@@ -1,67 +1,66 @@
-/* BooksComponent's private CSS styles */
-.selected {
-  background-color: #CFD8DC !important;
-  color: white;
-}
-.books {
-  margin-bottom: 10px;
-  list-style-type: none;
-  padding: 0;
-  width: auto;
-}
-.books li {
-  cursor: pointer;
-  position: relative;
-  left: 0;
-  background-color: #EEE;
-  margin: .5em;
-  padding: .3em 0;
-  height: 1.6em;
-  border-radius: 4px;
-}
-.books li.selected:hover {
-  background-color: #BBD8DC !important;
-  color: white;
-}
-.books li:hover {
-  color: #607D8B;
-  background-color: #DDD;
-  left: .1em;
-}
-.books .text {
-  position: relative;
-  top: -3px;
-}
-.books .badge {
-  float: right;
-  text-align: center;
-  margin-left: 30px;
-  display: inline-block;
-  font-size: small;
-  color: white;
-  padding: 0.8em 0.7em 0 0.7em;
-  background-color: #607D8B;
-  line-height: 1em;
-  position: relative;
-  left: -1px;
-  top: -4px;
-  width: 50px;
-  height: 1.8em;
-  border-radius: 4px 4px 4px 4px;
-}
-.books .name {
-  margin-right: 250px;
-}
-.head{
-  /*margin-left: 10px;*/
-  color: white;
-  background-color: #607D8B;
-  width: 70px;
-  height: 35px;
-  border-radius: 10px 10px 10px 10px;
-  font-size: 15px;
-}
-.add{
-  float: right;
-  margin-right: 10px;
-}
+/*.selected {*/
+  /*background-color: #CFD8DC !important;*/
+  /*color: white;*/
+/*}*/
+/*.books {*/
+  /*margin-bottom: 10px;*/
+  /*list-style-type: none;*/
+  /*padding: 0;*/
+  /*width: auto;*/
+/*}*/
+/*.books li {*/
+  /*cursor: pointer;*/
+  /*position: relative;*/
+  /*left: 0;*/
+  /*background-color: #EEE;*/
+  /*margin: .5em;*/
+  /*padding: .3em 0;*/
+  /*height: 1.6em;*/
+  /*border-radius: 4px;*/
+/*}*/
+/*.books li.selected:hover {*/
+  /*background-color: #BBD8DC !important;*/
+  /*color: white;*/
+/*}*/
+/*.books li:hover {*/
+  /*color: #607D8B;*/
+  /*background-color: #DDD;*/
+  /*left: .1em;*/
+/*}*/
+/*.books .text {*/
+  /*position: relative;*/
+  /*top: -3px;*/
+/*}*/
+/*.books .badge {*/
+  /*float: right;*/
+  /*text-align: center;*/
+  /*margin-left: 30px;*/
+  /*display: inline-block;*/
+  /*font-size: small;*/
+  /*color: white;*/
+  /*padding: 0.8em 0.7em 0 0.7em;*/
+  /*background-color: #607D8B;*/
+  /*line-height: 1em;*/
+  /*position: relative;*/
+  /*left: -1px;*/
+  /*top: -4px;*/
+  /*width: 50px;*/
+  /*height: 1.8em;*/
+  /*border-radius: 4px 4px 4px 4px;*/
+/*}*/
+/*.books .name {*/
+  /*margin-right: 250px;*/
+/*}*/
+/*.head{*/
+  /*!*margin-left: 10px;*!*/
+  /*color: white;*/
+  /*background-color: #607D8B;*/
+  /*width: 70px;*/
+  /*height: 35px;*/
+  /*border-radius: 10px 10px 10px 10px;*/
+  /*font-size: 15px;*/
+/*}*/
+/*.add{*/
+  /*float: right;*/
+  /*margin-right: 10px;*/
+/*}*/

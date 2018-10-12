@@ -1,30 +1,29 @@
 import { Component, OnInit } from '@angular/core';
-import { Book } from './book';
-import { BooksService } from '../../shared/services/books.service';
+// import { Book } from './book';
+// import { BooksService } from '../../shared/services/books.service';
 // import { BOOKS } from '../mock-books';
 
 @Component({
   selector: 'app-books',
   templateUrl: './books.component.html',
-  providers: [ BooksService ],
   styleUrls: ['./books.component.css']
 })
 export class BooksComponent implements OnInit {
 
   // books = BOOKS;
 
-  selectedBook: Book;
+  // selectedBook: Book;
 
 
-  constructor(private booksService: BooksService) { }
+  // constructor(private booksService: BooksService) { }
 
   ngOnInit() {
-    this.getBooks();
+    // this.getBooks();
   }
 
-  onSelect(book: Book): void {
-    this.selectedBook = book;
-  }
+  // onSelect(book: Book): void {
+    // this.selectedBook = book;
+  // }
 
   // add(name: string): void {
   //   this.editBook = undefined;
@@ -44,9 +43,9 @@ export class BooksComponent implements OnInit {
   // this.booksService.deleteBook(book.id).subscribe();
   // this.booksService.deleteBook(book.id);
 
-  getBooks(): void {
-    this.getBooks();
-  }
+  // getBooks(): void {
+  //   this.getBooks();
+  // }
 
   // update() {
   //   if (this.editBook) {
