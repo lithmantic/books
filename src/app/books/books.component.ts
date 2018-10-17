@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { Book } from './book';
-// import { BooksService } from '../../shared/services/books.service';
-// import { BOOKS } from '../mock-books';
+import { BooksService } from '../../shared/services/books.service';
 
 @Component({
   selector: 'app-books',
@@ -22,7 +20,7 @@ export class BooksComponent implements OnInit {
   }
 
   // onSelect(book: Book): void {
-    // this.selectedBook = book;
+  //   this.selectedBook = book;
   // }
 
   // add(name: string): void {
